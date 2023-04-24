@@ -9,5 +9,5 @@ az group create --location $region --resource-group $rg
 ###############################
 # delete
 ###############################
-az group delete --location $region --resource-group $rg
+az group delete --resource-group $rg --yes
 
