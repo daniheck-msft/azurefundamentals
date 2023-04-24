@@ -1,17 +1,32 @@
-# Set variables for the resource group, app name, and $region
+# general variables 
 $rg="playstuff"
 $region = "eastus"
-$appName = "myPlayWebApp"
+$webappname = "myPlayWebApp"
+$appplanname = "playAppPlan"
 
-# Create a resource group
-az group create --name $rg --$region $$region
+#########################################
+# Sample Get App 
+#########################################
+git clone https://github.com/Azure-Samples/html-docs-hello-world.git
+cd html-docs-hello-world
 
-# Create a web app
-az webapp create --name $appName --resource-group $rg --plan myAppServicePlan --runtime "DOTNET|5.0" --deployment-local-git
+#########################################
+# Create RG 
+#########################################
+az group create --location $region --resource-group $rg
 
-# Deploy a sample web page
-git clone https://github.com/Azure-Samples/dotnetcore-sqldb-tutorial.git
-cd dotnetcore-sqldb-tutorial
-az webapp deployment source config-local-git --name $appName --resource-group $rg --query url --output tsv
-git remote add azure <url-from-previous-command>
-git push azure master
+#########################################
+# Deploy Web App including AppPlan
+#########################################
+az webapp up --location $region --name $webappname --resource-group $rg --plan $appplanname --html --sku F1 -b
+
+#########################################
+# Delete Web App including AppPlan
+#########################################
+az webapp delete --name $webappname --resource-group $rg 
+az appservice plan delete --resource-group $rg --name $appplanname --yes
+
+###############################
+# List resources in RG
+###############################
+az resource list --resource-group $rg --output table
