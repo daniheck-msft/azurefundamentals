@@ -1,0 +1,3 @@
+az functionapp create --resource-group <resource-group-name> --consumption-plan-location <location> --name <function-app-name> --storage-account <storage-account-name> --runtime <runtime> --functions-version <version>
+az functionapp function create --resource-group <resource-group-name> --name <function-app-name> --function-name <function-name> --storage-account <storage-account-name> --runtime <runtime> --trigger-http --language <language>
+az functionapp deployment source config-zip --resource-group <resource-group-name> --name <function-app-name> --src <zip-file-path>
