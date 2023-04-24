@@ -1,8 +1,6 @@
 # general variables 
 $rg="playstuff"
 $region = "eastus"
-$sa = "allianzasjklhedi8732"
-
 # Set variables
 $vmName = "playvm"
 $adminUsername = "playadmin"
@@ -33,9 +31,23 @@ az vm create `
   --public-ip-address-dns-name $dnsname
   #--admin-password <admin-password> `
   
+#################################
+# run cmd
+#################################
+# az vm run-command invoke --resource-group $rg --name $vmName --command-id RunPowerShellScript --scripts "`
+# # Install IIS Server Role`
+# Install-WindowsFeature -Name Web-Server -IncludeManagementTools`
+# # Create default web page`
+# $defaultPagePath = "C:\inetpub\wwwroot\Default.htm"`
+# $defaultPageContent = "<html><body><h1>Welcome to my play website!</h1></body></html>"`
+# Set-Content -Path $defaultPagePath -Value $defaultPageContent``"
+
+az vm run-command invoke --resource-group $rg --name $vmName --command-id RunPowerShellScript --scripts "Install-WindowsFeature -Name Web-Server -IncludeManagementTools"
+az vm run-command invoke --resource-group $rg --name $vmName --command-id RunPowerShellScript --scripts "Set-Content -Path 'C:\inetpub\wwwroot\Default.htm' -Value '<html><body><h1>Welcome to my play website!</h1></body></html>'"
+az vm run-command invoke --resource-group $rg --name $vmName --command-id RunPowerShellScript --scripts "start http://localhost"
+
 mstsc.exe /v:"$dnsname.$region.cloudapp.azure.com"
 
-  
 #################################
 # delete
 #################################
