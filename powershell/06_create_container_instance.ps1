@@ -29,3 +29,6 @@ az container delete --resource-group $rg --name $containername --yes
 
 #delete RG
 #az group delete --resource-group $rg --yes
+
+# Documentation: https://docs.microsoft.com/en-us/azure/container-instances/
+# Pricing: https://azure.microsoft.com/en-us/pricing/details/container-instances/

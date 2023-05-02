@@ -53,3 +53,7 @@ mstsc.exe /v:"$dnsname.$region.cloudapp.azure.com"
 #################################
 
 az vm delete --resource-group $rg --name $vmName --yes
+
+
+# Documentation: https://docs.microsoft.com/en-us/azure/virtual-machines/
+# Pricing: https://azure.microsoft.com/en-us/pricing/details/virtual-machines/

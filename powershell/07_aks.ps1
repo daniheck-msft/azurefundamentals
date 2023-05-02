@@ -34,3 +34,5 @@ az acr delete --name $acr --resource-group $rg --yes
 #destroy everything
 az group delete --name $rg --yes --no-wait
 
+# Documentation: https://docs.microsoft.com/en-us/azure/aks/
+# Pricing: https://azure.microsoft.com/en-us/pricing/details/kubernetes-service/

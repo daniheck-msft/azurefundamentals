@@ -30,3 +30,7 @@ az appservice plan delete --resource-group $rg --name $appplanname --yes
 # List resources in RG
 ###############################
 az resource list --resource-group $rg --output table
+
+# Documentation: https://docs.microsoft.com/en-us/azure/app-service/
+# Pricing: https://azure.microsoft.com/en-us/pricing/details/app-service/
+

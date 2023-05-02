@@ -9,3 +9,5 @@ az resource list --resource-group $rg --output table
 az storage account delete --name $sa --resource-group $rg -y
 
 
+# Documentation: https://docs.microsoft.com/en-us/azure/storage/
+# Pricing: https://azure.microsoft.com/en-us/pricing/details/storage/
