@@ -1,9 +1,0 @@
-{
-    "tagName": {
-       "value": "StorageType"
-    },
-    "tagValue": {
-       "value": "[parameters('storageAccountType')]"
-    }
- }
- 
