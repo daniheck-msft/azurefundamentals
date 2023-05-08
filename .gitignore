@@ -1,1 +1,4 @@
-gitleaks-report.json
+**/.terraform
+**/.vs
+**/.vscode
+azurek8s

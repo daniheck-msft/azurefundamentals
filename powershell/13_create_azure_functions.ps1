@@ -21,6 +21,7 @@ cd LocalFunctionProj
 func new --name HttpExample --template "HTTP trigger" --authlevel "anonymous"
 
 #start the function app locally
+#dotnet nuget add source --name nuget.org https://api.nuget.org/v3/index.json
 func start
 start "http://localhost:7071/api/HttpExample"
 
