@@ -1,3 +1,4 @@
+#Loging in to Azure
 az login
 
 $subscriptions = az account list --query '[].{Name:name, ID:id}' | ConvertFrom-Json
