@@ -16,7 +16,7 @@ dotnet --list-sdks
 # az login
 
 # create a new function app
-func init LocalFunctionProj --dotnet
+func init LocalFunctionProj --dotnet --force
 cd LocalFunctionProj
 func new --name HttpExample --template "HTTP trigger" --authlevel "anonymous"
 

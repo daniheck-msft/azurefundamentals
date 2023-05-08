@@ -2,7 +2,7 @@
   "profiles": {
     "LocalFunctionProj": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7239",
+      "commandLineArgs": "--port 7122",
       "launchBrowser": false
     }
   }
