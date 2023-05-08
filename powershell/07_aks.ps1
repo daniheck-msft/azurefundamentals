@@ -1,6 +1,6 @@
 $rg = "playstuff"
-$aks = "daniheckaks363"
-$acr = "daniheckacr363"
+$aks = "playstuffaks363"
+$acr = "playstuffacr363"
 $image = "mcr.microsoft.com/azuredocs/aci-helloworld"
 $deploymentname = "aci-helloworld"
 

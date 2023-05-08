@@ -3,7 +3,7 @@ $region = "eastus"
 $workspaceName = "playstuffsynapse"
 $sa = "playstuffsa0815"
 $fileSystemName = "playstufffs"
-$adminUsername = "daniheckazure"
+$adminUsername = "playstuffadmin"
 $container = "greentaxidata"
 #################
 $url = "https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-01.parquet"

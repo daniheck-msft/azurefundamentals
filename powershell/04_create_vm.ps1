@@ -5,7 +5,7 @@ $region = "eastus"
 $vmName = "playvm"
 $adminUsername = "playadmin"
 #$adminPassword = "<admin-password>"
-$image = "MicrosoftWindowsServer:WindowsServer:202git2-datacenter-smalldisk-g2:20348.643.220403"
+$image = "MicrosoftWindowsServer:WindowsServer:2022-datacenter-smalldisk-g2:20348.643.220403"
 $vmSize = "Standard_B2s"
 $dnsname = "playstuffj34kjh3kjh"
 

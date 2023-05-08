@@ -2,7 +2,7 @@ $rg = "playstuff"
 $region = "eastus"
 $sqldb = "playstuffsqldb002"
 $sqlserver = "playstuffsqlsrv002"
-$adminuser ="daniheckazure"
+$adminuser ="playstuffadmin"
 $so = "S0"
 
 $securePassword = Read-Host "Enter password" -AsSecureString

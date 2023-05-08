@@ -1,6 +1,6 @@
 $rg="playstuff"
 $region = "eastus"
-$sa = "allianzasjklhedi8732"
+$sa = "playstuffsjklhedi8732"
 
 az storage account create --name $sa --resource-group $rg --location $region --sku Standard_LRS --kind StorageV2
 
