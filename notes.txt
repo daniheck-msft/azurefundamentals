@@ -22,3 +22,5 @@ https://www.youtube.com/watch?v=t1nB1RYihJg
 Microsoft Event homepage 
 https://events.microsoft.com/en-us/allevents/?language=English&clientTimeZone=1&product=Azure&search=fundamentals
 
+ARM Template Code Samples
+https://learn.microsoft.com/en-us/samples/browse/?expanded=azure&products=azure-resource-manager
